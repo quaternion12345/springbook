@@ -12,7 +12,7 @@ public class DaoFactory {
     public UserDao userDao(){
 //        ConnectionMaker connectionMaker = new DConnectionMaker();
 //        UserDao userDao = new UserDao(connectionMaker);
-        UserDao userDao = new UserDao();
+        UserDaoJdbc userDao = new UserDaoJdbc();
 //        userDao.setConnectionMaker(connectionMaker());
         userDao.setDataSource(dataSource());
         return userDao;
